@@ -3,10 +3,10 @@ title: Waveguides
 ---
 # Alex Brinson
 
-[Home][1]
-[Waveguides][2]
-[nBody Simulator][3]
-[Light House Problem][4]
+[Home][1]|
+[Waveguides][2]|
+[nBody Simulator][3]|
+[Light House Problem][4]|
 [nEDM][5]
 
 ---
