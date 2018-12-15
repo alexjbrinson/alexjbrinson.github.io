@@ -26,6 +26,7 @@ Transverse Magnetic (TM) | Transverse Electric (TE)
 ### Rectangular Waveguide Modes
 
 ![RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif](WaveGuideAnimations/RectangularWaveguideModes/RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif)
+
 ___
 
 ## Waveguide Notebooks
