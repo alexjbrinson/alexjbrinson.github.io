@@ -20,8 +20,10 @@ Unlike the plain plane-wave solutions typical of the EM wave equations in free s
 
 Transverse Magnetic (TM) | Transverse Electric (TE)
 ------------ | -------------
-![TriangleCrossSection_E_TM_3_2.gif](WaveGuideAnimations/TriangularWaveguideModesTriangleCrossSection_E_TM_3_2.gif) | ![TriangleCrossSection_H_TE_3_2.gif](WaveGuideAnimations/TriangularWaveguideModesTriangleCrossSection_H_TE_3_2.gif)
-Content in the first column | Content in the second column
+![TriangleCrossSection_E_TM_3_2.gif](WaveGuideAnimations/TriangularWaveguideModes/TriangleCrossSection_E_TM_3_2.gif) | ![TriangleCrossSection_H_TE_3_2.gif](WaveGuideAnimations/TriangularWaveguideModes/TriangleCrossSection_H_TE_3_2.gif)
+![TriangleSurface_E_TM_3_2.gif](WaveGuideAnimations/TriangularWaveguideModes/TriangleSurface_E_TM_3_2.gif) | ![TriangleSurface_H_TE_3_2.gif](WaveGuideAnimations/TriangularWaveguideModes/TriangleSurface_H_TE_3_2.gif)
+
+### Rectangular Waveguide Modes
 
 ![RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif](WaveGuideAnimations/RectangularWaveguideModes/RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif)
 ___
