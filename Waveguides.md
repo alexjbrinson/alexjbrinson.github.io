@@ -7,7 +7,7 @@ title: Waveguides
 Here are some waveguide animations I generated with in Mathematica. The animations show the temporal and spatial dependencies of either the electric (E) or magnetic (H) fields for different TE and TM modes propagating through rectangular/right-triangular hollow waveguides.
 Unlike the plain plane-wave solutions typical of the EM wave equations in free space, the boundary conditions of hollow waveguides don't allow for TEM modes. Instead a generic field propagation through a hollow waveguide can be decomposed into two types of modes: Transverse Electric (TE) and Transverse Magnetic (TM). In a TE mode the E-field is entirely transverse (perpendicular to the direction of propagation), but the H-Field will have a longitudinal component, and vice-versa for a TM mode.
 
-![Pls work][WaveGuideAnimations/RectangularWaveguideModes/RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif]
+![RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif](alexjbrinson.github.io/WaveGuideAnimations/RectangularWaveguideModes/RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif)
 ___
 
 # Waveguide Notebooks
