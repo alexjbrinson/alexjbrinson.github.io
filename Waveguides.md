@@ -32,10 +32,10 @@ ___
 ## Waveguide Notebooks
  These are the Mathematica notebooks I wrote to generate the above animations:
 
-* AnimationsTriangular.nb goes here
-* AnimationsRectangular.nb goes here
+* [AnimationsTriangular.nb](WaveGuideAnimations/AnimationsTriangular.nb)
+* [AnimationsRectangular.nb](WaveGuideAnimations/AnimationsRectangular.nb)
 
-I originally created the triangular waveguide notebook because I had just finished a Ph 106c problem where I needed to determine the possible modes of propagation for a right-triangular hollow waveguide, and I was curious to see what my solutions actually looked like. After that I decided I might as well repeat the procedure for a rectangular geometry, and my professor (Sunil Golwala) actually liked the results enough to ask if he could post them next year when he covered the topic!
+I originally created the triangular waveguide notebook because I had just finished a Ph 106c problem where I needed to determine the possible modes of propagation for a right-triangular hollow waveguide, and I was curious to see what my solutions actually looked like. After that I decided I might as well repeat the procedure for a rectangular geometry, and my professor (Sunil Golwala) liked the results enough that he asked if he could post the animations next year when he covered the topic!
 
 [1]:https://alexjbrinson.github.io/
 [2]:https://alexjbrinson.github.io/Waveguides
