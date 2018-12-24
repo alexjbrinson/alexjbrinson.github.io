@@ -1,5 +1,5 @@
 name: Alex Brinson
-description: description: [Home](https://alexjbrinson.github.io) | [Waveguides](https://alexjbrinson.github.io/Waveguides) | [nBody Simulator](https://alexjbrinson.github.io/nBodySim) | [Light House Problem](https://alexjbrinson.github.io/LightHouse) | [nEDM](https://alexjbrinson.github.io/nEDM)
+description: [Home](https://alexjbrinson.github.io) | [Waveguides](https://alexjbrinson.github.io/Waveguides) | [nBody Simulator](https://alexjbrinson.github.io/nBodySim) | [Light House Problem](https://alexjbrinson.github.io/LightHouse) | [nEDM](https://alexjbrinson.github.io/nEDM)
 theme: jekyll-theme-slate
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
