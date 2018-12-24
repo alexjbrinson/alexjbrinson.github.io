@@ -1,1 +1,4 @@
+name: name here.
+description: description here.
 theme: jekyll-theme-slate
+markdown: kramdown
