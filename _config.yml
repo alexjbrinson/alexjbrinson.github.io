@@ -1,5 +1,5 @@
 name: Alex Brinson
-description: 'Alex Brinson's first attemtp at a website'
+description: "Alex Brinson's first attemtp at a website"
 theme: jekyll-theme-slate
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
