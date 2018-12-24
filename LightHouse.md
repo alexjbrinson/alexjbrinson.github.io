@@ -12,7 +12,7 @@ title: LightHouse
 
 ---
 
-![AnimatedBaesSpinning.gif]("ComputationalPhysicsLab/LightHouse Problem/AnimatedBaesSpinning.gif")
+![AnimatedBaesSpinning.gif](ComputationalPhysicsLab/LightHouseProblem/AnimatedBaesSpinning.gif)
 
 The lighthouse problem was another computational physics lab assignment that I got really into and decided to go above and beyond for. Below is a brief summary of bayesian statistics, the lighthouse problem, and my solution.
 
