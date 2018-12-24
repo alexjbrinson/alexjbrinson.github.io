@@ -1,14 +1,12 @@
 name: Alex Brinson
-description: [Home][1]|
-[Waveguides][2]|
-[nBody Simulator][3]|
-[Light House Problem][4]|
-[nEDM][5]
+description: test?
 theme: jekyll-theme-slate
-markdown: kramdown
-
-[1]:https://alexjbrinson.github.io/
-[2]:https://alexjbrinson.github.io/Waveguides
-[3]:https://alexjbrinson.github.io/nBodySim
-[4]:https://alexjbrinson.github.io/LightHouse
-[5]:https://alexjbrinson.github.io/nEDM
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+css_class: 'highlight'
