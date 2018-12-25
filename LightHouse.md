@@ -1,16 +1,7 @@
 ---
-title: LightHouse
+title: Lighthouse Problem
 mathjax: True
----
-
-# Alex Brinson
-
-[Home][1]|
-[Waveguides][2]|
-[nBody Simulator][3]|
-[Light House Problem][4]|
-[nEDM][5]
-
+classes: wide
 ---
 
 ![AnimatedBaesSpinning.gif](ComputationalPhysicsLab/LighthouseProblem/AnimatedBaesSpinning.gif)
@@ -21,10 +12,4 @@ The lighthouse problem was another computational physics lab assignment that I g
 
 other test: 
 
-$$  \psi $$
-
-[1]:https://alexjbrinson.github.io/
-[2]:https://alexjbrinson.github.io/Waveguides
-[3]:https://alexjbrinson.github.io/nBodySim
-[4]:https://alexjbrinson.github.io/LightHouse
-[5]:https://alexjbrinson.github.io/nEDM
+$$  P(x|e) = \frac{P(e|x)P(x)}{P(e)} $$
