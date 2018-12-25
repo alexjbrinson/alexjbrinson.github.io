@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Home"
+    url: https://alexjbrinson.github.io/
+  - title: "Waveguides"
+    url: https://alexjbrinson.github.io/Waveguides
+  - title: "nBody Simulator"
+    url: https://alexjbrinson.github.io/nBodySim
+  - title: "Lighthouse Problem"
+    url: https://alexjbrinson.github.io/LightHouse
+  - title: "nEDM"
+    url: https://alexjbrinson.github.io/nEDM
