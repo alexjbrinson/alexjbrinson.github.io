@@ -2,15 +2,6 @@
 title: Waveguides
 classes: wide
 ---
-# Alex Brinson
-
-[Home][1]|
-[Waveguides][2]|
-[nBody Simulator][3]|
-[Light House Problem][4]|
-[nEDM][5]
-
----
 
 ![RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif](WaveGuideAnimations/RectangularWaveguideModes/RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif)
 
