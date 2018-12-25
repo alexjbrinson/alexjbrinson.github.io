@@ -10,7 +10,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 remote_theme             : "mmistakes/minimal-mistakes@4.14.1"
-title                    : "ABrinson"
+title                    : "Alex Brinson"
 title_separator          : "-"
 name                     : Alex Brinson
 description              : "trying to make a website..."
