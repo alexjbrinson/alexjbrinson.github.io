@@ -21,9 +21,9 @@ The lighthouse problem was another computational physics lab assignment that I g
 other test: 
 \begin
 $$
-\begin{align*}
+\begin{displaymath}
   \psi 
-\end{align*}
+\end{displaymath}
 $$
 
 [1]:https://alexjbrinson.github.io/
