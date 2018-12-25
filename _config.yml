@@ -2,6 +2,8 @@ name: Alex Brinson
 description: "My first attempt at a website"
 theme: jekyll-theme-slate
 # Jekyll 3 now only supports Kramdown for Markdown
+
+markdown: kramdown
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
