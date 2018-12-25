@@ -1,5 +1,6 @@
 ---
 title: LightHouse
+mathjax: True
 ---
 
 # Alex Brinson
@@ -19,12 +20,8 @@ The lighthouse problem was another computational physics lab assignment that I g
 ### Bayesian Inference
 
 other test: 
-\begin
-$$
-\begin{displaymath}
-  \psi 
-\end{displaymath}
-$$
+
+$$  \psi $$
 
 [1]:https://alexjbrinson.github.io/
 [2]:https://alexjbrinson.github.io/Waveguides
