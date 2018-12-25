@@ -25,10 +25,4 @@ ___
 * [AnimationsTriangular.nb](WaveGuideAnimations/AnimationsTriangular.nb)
 * [AnimationsRectangular.nb](WaveGuideAnimations/AnimationsRectangular.nb)
 
-I originally created the triangular waveguide notebook because I had just finished a Ph 106c problem where I needed to determine the possible modes of propagation for a right-triangular hollow waveguide, and I was curious to see what my solutions actually looked like. After that I decided I might as well repeat the procedure for a rectangular geometry, and my professor (Sunil Golwala) liked the results enough that he asked if he could post the animations next year when he covered the topic!
-
-[1]:https://alexjbrinson.github.io/
-[2]:https://alexjbrinson.github.io/Waveguides
-[3]:https://alexjbrinson.github.io/nBodySim
-[4]:https://alexjbrinson.github.io/LightHouse
-[5]:https://alexjbrinson.github.io/nEDM
+I originally created the triangular waveguide notebook because I had just finished a Ph 106c problem where I needed to determine the possible modes of propagation for a right-triangular hollow waveguide, and I was curious to see what my solutions actually looked like. After that I decided I might as well repeat the procedure for a rectangular geometry, and my professor (Sunil Golwala) liked the results enough that he asked if he could post the animations next year when he covers the topic!
