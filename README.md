@@ -1,12 +1,3 @@
-# Alex Brinson
-
-[Home][1]|
-[Waveguides][2]|
-[nBody Simulator][3]|
-[Light House Problem][4]|
-[nEDM][5]
-
----
 
 This homepage currently serves little purpose...
 
