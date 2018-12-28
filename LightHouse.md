@@ -16,7 +16,7 @@ Here's a statement of the the problem adapted from the Ph21 assignment:
 
 <div style="text-align:center">
 <figure>
-  <img src="ComputationalPhysicsLab/LighthouseProblem/LighthouseGeometry.PNG alt="Lighthouse Problem Geometry"/>
+  <img src="ComputationalPhysicsLab/LighthouseProblem/LighthouseGeometry.PNG" alt="Lighthouse Problem Geometry"/>
   <figcaption>Lighthouse Problem Geometry</figcaption>
 </figure>
 </div>
