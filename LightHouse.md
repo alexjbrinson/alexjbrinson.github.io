@@ -22,6 +22,6 @@ Consider the case where neither α nor β are known beforehand. Calculate the di
 
 As you might've guessed from the use of the word "posterior", the main idea is to use Bayesian statistics to infer the lighthouse's position based on a string of photodetector data. From Bayes' theorem:
 
-$$  P(h \vert e) = \frac{P(e \vert h)P(h)}{P(e)} $$
+$$ P(h \vert e) = \frac{P(e \vert h)P(h)}{P(e)} $$
 
-where $$P(h \vert e)$$ is the _posterior_ probability assigned to some hypothesis h based on some set of evidence e, $$P(h)$$ is the _prior_ probability assigned to h (before observing e), and $$P(e \vert h)$$ is the _likelihood_ of observing evidence e given that h is true. $$P(e)$$ will just amount to a normalization factor; I don't know what the cool jargon is for it.
+where \$$ P(h \vert e) $$ is the _posterior_ probability assigned to some hypothesis h based on some set of evidence e, $$ P(h) $$ is the _prior_ probability assigned to h (before observing e), and $$ P(e \vert h) $$ is the _likelihood_ of observing evidence e given that h is true. $$ P(e) $$ will just amount to a normalization factor; I don't know what the cool jargon is for it.
