@@ -1,6 +1,6 @@
 
 Welcome to my website!
 
-![](Research/nEDM/RebarWhisperer.jpg)
+![](Research/nEDM/RebarWhispererCropped.jpg)
 
 [CV](AlexBrinsonGradAppCV.pdf)
