@@ -13,7 +13,7 @@ The lighthouse problem was a computational physics lab assignment that I decided
 Here's a statement of the the problem adapted from the Ph21 assignment:
 
 <figure>
-  <class="center" img src="ComputationalPhysicsLab/LighthouseProblem/LighthouseGeometry.PNG"/>
+  <img class="center" src="ComputationalPhysicsLab/LighthouseProblem/LighthouseGeometry.PNG"/>
   <figcaption>Lighthouse Problem Geometry</figcaption>
 </figure>
 
