@@ -6,10 +6,22 @@ classes: wide
 
 ![AnimatedBaesSpinning.gif](ComputationalPhysicsLab/LighthouseProblem/AnimatedBaesSpinning.gif)
 
-The lighthouse problem was another computational physics lab assignment that I got really into and decided to go above and beyond for. Below is a brief summary of bayesian statistics, the lighthouse problem, and my solution.
+The lighthouse problem was a computational physics lab assignment that I decided to go above and beyond for. Below is a brief summary of the problem and my solution.
 
-### Bayesian Inference
+## The Problem
 
-other test: 
+Here's a statement of the the problem adapted from the Ph21 assignment:
 
-$$  P(x|e) = \frac{P(e|x)P(x)}{P(e)} $$
+![LighthouseGeometry.jpg](ComputationalPhysicsLab/LighthouseProblem/LighthouseGeometry.png)
+
+There is a deffective lighthouse located at a position α along the shore and a distance β out to sea (see figure above). The lighthouse emits highly collimated ﬂashes at random times and at random azimuths (a good lighthouse emits ﬂashes at regular intervals, usually due to rotation of the lighthouse beam). A dense array of photodetectors is set up along the shore and each ﬂash is recorded by a single photodetector. The data consist of the position $x_k$ of the illuminated photodector for the kth flash. 
+
+Consider the case where neither α nor β are known beforehand. Calculate the distributions of the logarithm of the posterior probability for a grid of α and β values. Then plot the 2-dimensional distribution of the posterior distribution as a contour plot in the α-β plane.
+
+## Solution
+
+As you might've guessed from the use of the word "posterior", the idea of the problem is to use Bayesian statistics to infer the lighthouse's position based on a string of photodetector data. From Bayes' theorem:
+
+$$  P(h|e) = \frac{P(e|h)P(h)}{P(e)} $$
+
+where $P(h|e)$ is the _posterior_ probability assigned to some hypothesis h based on some set of evidence e, $P(h)$ is the _prior_ probability assigned to h (before observing e), and $P(e|h)$ is the _likelihood_ of observing evidence e *given* that h is true. P(e) will just amount to a normalization factor; I don't know what the cool jargon is for it.
