@@ -22,6 +22,6 @@ As you might've guessed from the use of the word "posterior", the main idea is t
 
 $$  P(h \vert e) = \frac{P(e \vert h)P(h)}{P(e)} $$
 
-where $$P(h \vert e)$$ is the _posterior_ probability assigned to some hypothesis h based on some set of evidence e, $$P(h)$$ is the _prior_ probability assigned to h (prior to observing e), and $$P(e \vert h)$$ is the _likelihood_ of observing evidence e **given** that h is true. $$P(e)$$ will just amount to a normalization factor on the posterior distibution; I don't know the cool jargon for it.
+where $$P(h \vert e)$$ is the **posterior** probability assigned to some hypothesis h based on some set of evidence e, $$P(h)$$ is the **prior** probability assigned to h (prior to observing e), and $$P(e \vert h)$$ is the **likelihood** of observing evidence e *given* that h is true. $$P(e)$$ just amounts to a normalization factor on the posterior distibution; I don't know the cool jargon for it.
 
 
