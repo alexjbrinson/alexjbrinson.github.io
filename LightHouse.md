@@ -44,6 +44,16 @@ $$P(x_1 \leq x \leq x_2) =  \int_{x_1}^{x_2}\frac{\partial P}{\partial x}dx$$
 
 $$\int T(O)dO$$
 
+...
+
+and we arrive at the rather ~convoluted~ gross likelihood function: $$P(x_k \vert \alpha, \beta) = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta\pi}$$
+
+Fortunately there is another useful tool our kit. One of the best friends of many physicists (or at least one of my best friends...) is Mathematica:
+
+~~~ mathematica
+expression//FullSimplify
+~~~
+
 ### Implementation
 
 ~~~ python
