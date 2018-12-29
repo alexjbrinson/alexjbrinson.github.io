@@ -26,7 +26,14 @@ where $$P(h \vert e)$$ is the **posterior** probability assigned to some hypothe
 
 ### A Prior(i)
 
-As is typical of problems involving Bayesian conditionalization, the choice of prior is necessarily a bit arbitrary. TODO
+As is typical of problems involving Bayesian conditionalization, the choice of prior is necessarily a bit arbitrary. I'll spare you the philosophy of probability schpiel, but suffice to say that it's difficult (and sometimes impossible) to construct a truly information-free prior. Since the context of this problem is presumably a nearby ship hoping to identify the location of the lighthouse, I decided it was reasonable to use a uniform probability distribution over a small rectangle in $$\alpha$$-$$\beta$$ space, with $$-5<=\alpha<=5$$ (in arbitrary distance units) and $$0<=\beta<=5$$ (with the lower bound set st the lighthouse is assumed not to be inland):
+
+$$ \frac{\partial^2 P_{prior}(\alpha,\beta)}{\partial \alpha \partial \beta} = \begin{cases}
+                                   \frac{1}/{50} & \text{if $n=1$} \\
+                                   1 & \text{if $n=2$} \\
+  T(\Floor{n/2}) + T(\Ceil{n/2}) + 2 & \text{if $n>2$}
+  \end{cases}
+$$
 
 ### The Likelihood
 
