@@ -6,7 +6,7 @@ classes: wide
 
 ![AnimatedBaesSpinning.gif](ComputationalPhysicsLab/LighthouseProblem/AnimatedBaesSpinning.gif)
 
-The lighthouse problem was a computational physics lab assignment that I decided to go above and beyond for. Below is a brief summary of the problem and my solution.
+The lighthouse problem was a computational physics lab assignment that I decided to go above and beyond for. Below is a summary of the problem and my solution.
 
 ## The Problem
 
