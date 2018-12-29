@@ -24,4 +24,18 @@ $$  P(h \vert e) = \frac{P(e \vert h)P(h)}{P(e)} $$
 
 where $$P(h \vert e)$$ is the **posterior** probability assigned to some hypothesis h based on some set of evidence e, $$P(h)$$ is the **prior** probability assigned to h (prior to observing e), and $$P(e \vert h)$$ is the **likelihood** of observing evidence e *given* that h is true. $$P(e)$$ just amounts to a normalization factor on the posterior distibution; I don't know of any cool name for it.
 
+### A Prior(i)
 
+TODO
+
+### The Likelihood
+
+$$\int_0^{2\pi}T(O)dO$$
+
+### Implementation
+
+~~~ python
+print "TODO" # It's Python 2, so this is acceptable syntax
+~~~
+
+![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
