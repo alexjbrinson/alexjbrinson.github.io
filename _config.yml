@@ -13,7 +13,7 @@ remote_theme             : "mmistakes/minimal-mistakes@4.14.1"
 title                    : "Brinson"
 title_separator          : "|"
 name                     : Alex Brinson
-description              : "trying to make a website..."
+description              : "A website for my physics-related projects"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -87,7 +87,7 @@ analytics:
 author:
   name             : "Alex Brinson"
   avatar           : # "/assets/surfingBW.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Caltech Physics Class of 2018"
+  bio              : "Caltech Physics, Class of 2018"
   location         : # "Somewhere"
   email            :
   uri              :
