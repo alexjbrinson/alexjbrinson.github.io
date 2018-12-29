@@ -42,6 +42,8 @@ $$ \tan(\th) = \frac{x - \alpha}{\beta}, \text{so} \th = \arctan(\frac{x - \alph
 
 $$P(x_\leqx\leqx_2) =  \int_{x_1}^{x_2}\frac{\partialP}{\partialx}dx$$
 
+$$\intT(O)dO$$
+
 ### Implementation
 
 ~~~ python
