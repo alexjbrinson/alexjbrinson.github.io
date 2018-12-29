@@ -36,9 +36,11 @@ $$
 
 ### The Likelihood
 
-Now we need to determine the form of the likelihood, $$P(x_k \vert \alpha, \beta)$$, so it's time for some math. We're given that "the lighthouse emits highly collimated ﬂashes at random times and at random azimuths," so we know that the _angles_ of emissions are uniformly distributed in $$\theta$$, $$\frac{\partial P(\theta_k \vert \alpha, \beta)}{\partial \theta} = 1/\pi$$ (only angles $$-\pi/2<\theta_k<\pi/2$$ will actually reach a detector along the shore).
+Now we need to determine the form of the likelihood, $$P(x_k \vert \alpha, \beta)$$, so it's time for some math. We're told that "the lighthouse emits highly collimated ﬂashes at random times and at random azimuths," so we know that the _angles_ of emissions are uniformly distributed in $$\theta$$, $$\frac{\partial P(\theta_k \vert \alpha, \beta)}{\partial \theta} = \frac{1}{\pi}$$ (only angles $$-\pi/2<\theta_k<\pi/2$$ will actually reach a detector along the shore). Now... (you may wish to refer to the figure),
 
-$$\int_0^{2\pi}T(O)dO$$
+$$ \tan(\th) = \frac{x - \alpha}{\beta}, \text{so} \th = \arctan(\frac{x - \alpha}{\beta}), \text{and equivalently} x = \beta \tan(\theta)+\alpha \rightarrow \frac{dx}{d\theta} = \beta \sec^2(\theta)
+
+$$P(x_\leqx\leqx_2) =  \int_{x_1}^{x_2}\frac{\partialP}{\partialx}dx$$
 
 ### Implementation
 
