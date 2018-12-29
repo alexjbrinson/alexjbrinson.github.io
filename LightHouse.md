@@ -46,13 +46,13 @@ $$\int T(O)dO$$
 
 ...
 
-and we arrive at the rather ~convoluted~ gross likelihood function: $$P(x_k \vert \alpha, \beta) = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta\pi}$$
+and we arrive at the rather ~~convolved~~ convoluted likelihood function: $$P(x_k \vert \alpha, \beta) = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta\pi}$$
 
-Fortunately there is another useful tool our kit. One of the best friends of many physicists (or at least one of my best friends...) is Mathematica:
+Fortunately, there is another useful tool our kit. One of the best friends of many physicists (or at least one of my best friends...) is Mathematica:
 
-~~~ mathematica
-expression//FullSimplify
-~~~
+![EverythingIsCauchy.PNG](ComputationalPhysicsLab/LighthouseProblem/EverythingIsCauchy.PNG)
+
+This simplified expression is immediately recognizable by mathematicians as a Cauchy distribution, and by physicists as a Lorentzian. Either way, they pop up all over the place, so this is a good sign that we're on the right track.
 
 ### Implementation
 
