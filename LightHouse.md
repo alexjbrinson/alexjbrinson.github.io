@@ -26,7 +26,7 @@ where $$P(h \vert e)$$ is the **posterior** probability assigned to some hypothe
 
 ### A Prior(i)
 
-TODO
+As is typical of problems involving Bayesian conditionalization, the choice of prior is necessarily a bit arbitrary. TODO
 
 ### The Likelihood
 
