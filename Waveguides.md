@@ -1,6 +1,7 @@
 ---
 title: Waveguides
 classes: wide
+mathjax: true
 ---
 
 ![RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif](WaveGuideAnimations/RectangularWaveguideModes/RectangularWaveguide_H_TE_3_2_SurfaceField_MoreDetail.gif)
