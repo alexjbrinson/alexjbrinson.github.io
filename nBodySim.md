@@ -1,6 +1,7 @@
 ---
 title: nBodySim
 classes: wide
+mathjax: true
 ---
 
 ## Animations from nBody Simulations
