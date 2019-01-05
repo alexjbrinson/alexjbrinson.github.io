@@ -1,5 +1,5 @@
 ---
-title: nBodySim
+title: n Body Simulator
 classes: wide
 mathjax: true
 ---
