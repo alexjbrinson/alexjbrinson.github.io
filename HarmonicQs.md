@@ -8,7 +8,7 @@ mathjax: true
 
 Everybody (who's anybody) knows about the Legendre Polynomials $$P_l$$ and their associated functions $$P_l^m$$. It is also well-known that the associated polynomials as a function of the polar angle, $$P_l^m(\cos(\theta))$$, when multiplied by a complex exponential in the azimuthal angle, $$e^{i\frac{m \phi}{2 \pi}}$$, produce particularly important type of function known as a "Spherical Harmonic", $$Y_l^m(\theta,\phi) = P_l^m(\cos(\theta)) e^{i\frac{m \phi}{2 \pi}}.$$
 
-|![P_l(x) Plot goes here]()|![P_l(Cos(theta)) plot goes here]{}|
+![P_l(x) Plot goes here]()|![P_l(Cos(theta)) plot goes here]()
 
 But what most people _don't_ know, is that the Legendre Polynomials actually have an ~~evil~~ misunderstood twin: **The Legendre Q Functions**
 
@@ -20,4 +20,6 @@ Rodrigues Formula: TODO
 
 P functions -> associated polynomials -> spherical harmonics
 
-<iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>
+Test1|Test2
+------------ | -------------
+<iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>|<iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>
