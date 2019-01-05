@@ -59,10 +59,31 @@ Fortunately, there is another useful tool our kit. One of the best friends of ma
 
 This simplified expression is immediately recognizable by mathematicians as a Cauchy distribution, and by physicists as a Lorentzian. Whatever you want to call it, the distribution pops up all over the place, so this is a good sign that we're on the right track.
 
+### Posterior
+
+Putting together what we've established thus far, we have a complete prescription for how to estimate the lighthouse's positional parameters:
+
+$$ \frac{\partial^2 P_{posterior}(\alpha,\beta)\vert x_k}{\partial \alpha \partial \beta} = \frac{\partial^2 P_{prior}(\alpha,\beta)}{\partial \alpha \partial \beta} \frac{P(x_k \vert \alpha, \beta)}{C}$$,
+
+where C is the normalization constant st int_{0}^{5} int_{-5}^{5} \frac{\partial^2 P_{posterior}(\alpha,\beta)\vert x_k}{\partial \alpha \partial \beta} d\alpha d\beta = 1$$
+
 ### Implementation
 
+First, I defined a set of true lighthouse parameter values, as well as a total number of flashes to generate:
+
 ~~~ python
-print "TODO" # It's Python 2, so this is acceptable syntax
+"""Pertinent parameter values"""
+a = float(1) #true lighthouse alpha parameter
+b = float(2) #true lighthouse beta parameter
+j = 8 #I'll generate 2^j data points
+~~~
+
+This was used to generate the full data set like so:
+
+~~~ python
+"""Generating data to conditionalize on"""
+thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #data set of theta vals between -pi/2 and pi/2, pulled from a uniform distribution
+xD = b*np.tan(thetaD) + a
 ~~~
 
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
