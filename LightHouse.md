@@ -75,7 +75,7 @@ where C is the normalization constant st $$\int_{0}^{5} \int_{-5}^{5} \frac{\par
 
 If we wanted, we could treat our posterior distribution after the first data point as an updated prior on which to conditionalize the second data point, and so on. But this is equivalent to conditionalizing on the total data set $$x_k$$ all at once:
 
-$$Pdf_{posterior}(\alpha,\beta\vert x_k)} =  \displaystyle \prod_{j=1}^{k} \frac{\beta}{\pi((x_j-\alpha)^2 + \beta^2)}  \begin{cases} 
+$$Pdf_{posterior}(\alpha,\beta\vert x_k) =  \displaystyle \prod_{j=1}^{k} \frac{\beta}{\pi((x_j-\alpha)^2 + \beta^2)}  \begin{cases} 
                                    \frac{1}{C} & \text{$-5\leq\alpha\leq5$ & $0\leq\beta\leq5$} \\
                                    0 & \text{else} \end{cases}$$
 
@@ -102,4 +102,4 @@ Next...
 
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
 
-If you'd like to play with the code yourself, it can be found here(soon).
+If you'd like to play with the code yourself, it can be found [here](ComputationalPhysicsLab/LighthouseProblem/Lighthouse.py) (written in Python 2, but should only be a few corrected print statements away from runnint in Python 3).
