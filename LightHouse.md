@@ -40,7 +40,11 @@ Now we need to determine the form of the likelihood, $$P(x_k \vert \alpha, \beta
 
 $$ \tan(\theta) = \frac{x - \alpha}{\beta}, \text{so } \theta = \arctan(\frac{x - \alpha}{\beta}), \text{and equivalently } x = \beta \tan(\theta)+\alpha \\ \rightarrow \frac{dx}{d\theta} = \beta \sec^2(\theta)$$
 
-$$P(x_1 \leq x \leq x_2) =  \int_{x_1}^{x_2}\frac{\partial P}{\partial x}dx = \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial \theta}d\theta = \int_{\artctan(\frac{x_1-\alpha}{\beta})}^{\frac{x_1-\alpha}{\beta})}\frac{1}{\pi}d\theta = \frac{\artctan(\frac{x_2-\alpha}{\beta})-\artctan(\frac{x_1-\alpha}{\beta})}{\pi}$$
+$$P(x_1 \leq x \leq x_2) =  \int_{x_1}^{x_2}\frac{\partial P}{\partial x}dx = \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial \theta}d\theta = 
+\int_{\artctan(\frac{x_1-\alpha}{\beta})}^{\arctan(\frac{x_2-\alpha}{\beta})} \frac{1}{\pi} d\theta = \frac{\artctan(\frac{x_2-\alpha}{\beta})-\artctan(\frac{x_1-\alpha}{\beta})}{\pi}$$
+
+$$P(x_1 \leq x \leq x_2) =  \int_{x_1}^{x_2}\frac{\partial P}{\partial x}dx =  \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial x} \frac{dx}{d\theta} dx = \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial x} \beta \sec^2(\theta) d\theta =
+\int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial \theta}d\theta = $$
 
 $$\int T(O)dO$$
 
