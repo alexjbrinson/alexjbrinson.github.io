@@ -94,6 +94,12 @@ thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #theta data, drawn from unif
 xD = b*np.tan(thetaD) + a #position data from photodetectors
 ~~~
 
+Next...
+
+~~~ python
+#TODO
+~~~
+
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
 
 If you'd like to play with the code yourself, it can be found here(soon).
