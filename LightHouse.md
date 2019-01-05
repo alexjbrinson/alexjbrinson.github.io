@@ -36,28 +36,62 @@ $$
 
 ### The Likelihood
 
-Now we need to determine the form of the likelihood, $$P(x_k \vert \alpha, \beta)$$, so it's time for some math. We're told that "the lighthouse emits highly collimated ﬂashes at random times and at random azimuths," so we know that the emissions are uniformly distributed in $$\theta$$: $$\frac{\partial P(\theta_k \vert \alpha, \beta)}{\partial \theta} = \frac{1}{\pi}$$ (only angles $$-\pi/2<\theta_k<\pi/2$$ will actually reach a detector along the shore). Now... (you may wish to refer to the figure),
+Now we need to determine the form of the likelihood, $$P(x_k \vert \alpha, \beta)$$, so it's time for some math. We're told that "the lighthouse emits highly collimated ﬂashes at random times and at random azimuths," so we know that the emissions are uniformly distributed in $$\theta$$: $$\frac{\partial P(\theta_k \vert \alpha, \beta)}{\partial \theta} = \frac{1}{\pi}$$ (only angles $$-\pi/2<\theta_k<\pi/2$$ will actually reach a detector along the shore). Now... (refer to the figure),
 
-$$ \tan(\theta) = \frac{x - \alpha}{\beta}, \text{so} \theta = \arctan(\frac{x - \alpha}{\beta}), \text{and equivalently} x = \beta \tan(\theta)+\alpha \rightarrow \frac{dx}{d\theta} = \beta \sec^2(\theta)$$
+$$ \tan(\theta) = \frac{x - \alpha}{\beta}$$, so $$\theta = \arctan(\frac{x - \alpha}{\beta})$$, or equivalently $$ x = \beta \tan(\theta)+\alpha \rightarrow \frac{dx}{d\theta} = \beta \sec^2(\theta)$$
 
-$$P(x_1 \leq x \leq x_2) =  \int_{x_1}^{x_2}\frac{\partial P}{\partial x}dx$$
+Treating $$\alpha$$ and $$\beta$$ as given, we can find the probability of observing a flash at a given -range by equating it to the probability of a flash being emmitted in the corresponding angle range
 
-$$\int T(O)dO$$
+$$P(x_1 \leq x \leq x_2) =  \int_{x_1}^{x_2}\frac{\partial P}{\partial x}dx =  \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial x} \frac{dx}{d\theta} d\theta = \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial x} \beta \sec^2(\theta) d\theta =
+\int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial \theta} d\theta $$
 
-...
+Since the integrals are equivalent regardless of $$x_1$$ and $$x_2$$, we can simply equate the integrands:
 
-and we arrive at the rather ~~convolved~~ convoluted likelihood function: $$P(x_k \vert \alpha, \beta) = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta\pi}$$
+$$\frac{\partial P}{\partial x} \beta \sec^2(\theta(x)) = \frac{\partial P}{\partial \theta} = \frac{1}{\pi}$$
+
+$$\Rightarrow \frac{\partial P}{\partial x} = \frac{\cos^2(\theta(x))}{\beta \pi} = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta \pi}$$
+
+and we arrive at the rather convoluted likelihood function: $$P(x \vert \alpha, \beta) = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta \pi}$$
 
 Fortunately, there is another useful tool our kit. One of the best friends of many physicists (or at least one of my best friends...) is Mathematica:
 
 ![EverythingIsCauchy.PNG](ComputationalPhysicsLab/LighthouseProblem/EverythingIsCauchy.PNG)
 
-This simplified expression is immediately recognizable by mathematicians as a Cauchy distribution, and by physicists as a Lorentzian. Either way, they pop up all over the place, so this is a good sign that we're on the right track.
+This simplified expression is immediately recognizable by mathematicians as a Cauchy distribution, and by physicists as a Lorentzian. Whatever you want to call it, the distribution pops up all over the place and this is a good sign that we're on the right track.
+
+### Posterior
+
+Putting together what we've established thus far, we have a complete prescription for how to construct a posterior pdf over the lighthouse's positional parameters, based off a photedetector measurement $$x_1$$:
+
+$$\frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_1)}{\partial \alpha  \partial \beta} = \frac{\partial^2 P_{prior}(\alpha,\beta)}{\partial \alpha  \partial \beta} \frac{P(x_1 \vert \alpha, \beta)}{C} = \frac{\beta}{\pi((x_1-\alpha)^2 + \beta^2)} \begin{cases} 
+                                    \frac{1}{C} & \text{$-5\leq\alpha\leq5$ & $0\leq\beta\leq5$} \\
+                                   0 & \text{else} \end{cases}$$
+
+where C is the normalization constant st $$\int_{0}^{5} \int_{-5}^{5} \frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_1)}{\partial \alpha \partial \beta} d\alpha d\beta = 1$$
+
+If we wanted, we could treat our posterior distribution after the first data point as an updated prior on which to conditionalize the second data point, and so on. But this is equivalent to conditionalizing on the total data set all at once:
+
+$$\frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_k)}{\partial \alpha \partial \beta} =  \displaystyle \prod_{j=1}^{k} \frac{\beta}{\pi((x_j-\alpha)^2 + \beta^2)}  \begin{cases} 
+                                   \frac{1}{C} & \text{$-5\leq\alpha\leq5$ & $0\leq\beta\leq5$} \\
+                                   0 & \text{else} \end{cases}$$
 
 ### Implementation
 
+First, I defined a set of true lighthouse parameter values, as well as a total number of flashes to generate:
+
 ~~~ python
-print "TODO" # It's Python 2, so this is acceptable syntax
+"""Pertinent parameter values"""
+a = float(1) #true lighthouse alpha parameter
+b = float(2) #true lighthouse beta parameter
+j = 8 #I'll generate 2^j data points
+~~~
+
+This was used to generate the full data set like so:
+
+~~~ python
+"""Generating data to conditionalize on"""
+thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #theta data, pulled from uniform distribution between -pi/2 and pi/2
+xD = b*np.tan(thetaD) + a #position data from photodetectors
 ~~~
 
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
