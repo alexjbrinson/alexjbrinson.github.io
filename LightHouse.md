@@ -40,12 +40,12 @@ Now we need to determine the form of the likelihood, $$P(x_k \vert \alpha, \beta
 
 $$ \tan(\theta) = \frac{x - \alpha}{\beta}, \text{so } \theta = \arctan(\frac{x - \alpha}{\beta}), \text{and equivalently } x = \beta \tan(\theta)+\alpha \rightarrow \frac{dx}{d\theta} = \beta \sec^2(\theta)$$
 
-Add text here...
+Treating $$\alpha$$ and $$\beta$$ as given, we can find the probability (density function) of observing a flash at a given position x by equating it to the probability of observing a flash at the correspongind angle $$\theta(x)$$:
 
-$$P(x_1 \leq x \leq x_2) =  \int_{x_1}^{x_2}\frac{\partial P}{\partial x}dx =  \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial x} \frac{dx}{d\theta} dx = \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial x} \beta \sec^2(\theta) d\theta =
+$$P(x_1 \leq x \leq x_2) =  \int_{x_1}^{x_2}\frac{\partial P}{\partial x}dx =  \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial x} \frac{dx}{d\theta} d\theta = \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial x} \beta \sec^2(\theta) d\theta =
 \int_{\theta(x_1)}^{\theta(x_2)}\frac{\partial P}{\partial \theta} d\theta $$
 
-Add text here?
+Since the integrals are equivalent regardless of the values for $$x_1$$ and $$x_2$$, we can simply equate the integrands
 
 $$\rightarrow \frac{\partial P}{\partial x} \beta \sec^2(\theta(x)) = \frac{\partial P}{\partial \theta} = \frac{1}{\pi}$$
 
