@@ -57,7 +57,11 @@ Fortunately, there is another useful tool our kit. One of the best friends of ma
 
 ![EverythingIsCauchy.PNG](ComputationalPhysicsLab/LighthouseProblem/EverythingIsCauchy.PNG)
 
+
+
 This simplified expression is immediately recognizable by mathematicians as a Cauchy distribution, and by physicists as a Lorentzian. Whatever you want to call it, the distribution pops up all over the place and this is a good sign that we're on the right track.
+
+![CauchyDist.PNG](ComputationalPhysicsLab/LighthouseProblem/CauchyDist.PNG)
 
 ### Posterior
 
@@ -69,9 +73,9 @@ $$\frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_1)}{\partial \alpha  \parti
 
 where C is the normalization constant st $$\int_{0}^{5} \int_{-5}^{5} \frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_1)}{\partial \alpha \partial \beta} d\alpha d\beta = 1$$
 
-If we wanted, we could treat our posterior distribution after the first data point as an updated prior on which to conditionalize the second data point, and so on. But this is equivalent to conditionalizing on the total data set all at once:
+If we wanted, we could treat our posterior distribution after the first data point as an updated prior on which to conditionalize the second data point, and so on. But this is equivalent to conditionalizing on the total data set $$x_k$$ all at once:
 
-$$\frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_k)}{\partial \alpha \partial \beta} =  \displaystyle \prod_{j=1}^{k} \frac{\beta}{\pi((x_j-\alpha)^2 + \beta^2)}  \begin{cases} 
+$$Pdf_{posterior}(\alpha,\beta\vert x_k)} =  \displaystyle \prod_{j=1}^{k} \frac{\beta}{\pi((x_j-\alpha)^2 + \beta^2)}  \begin{cases} 
                                    \frac{1}{C} & \text{$-5\leq\alpha\leq5$ & $0\leq\beta\leq5$} \\
                                    0 & \text{else} \end{cases}$$
 
@@ -84,14 +88,18 @@ First, I defined a set of true lighthouse parameter values, as well as a total n
 a = float(1) #true lighthouse alpha parameter
 b = float(2) #true lighthouse beta parameter
 j = 8 #I'll generate 2^j data points
-~~~
 
-This was used to generate the full data set like so:
-
-~~~ python
 """Generating data to conditionalize on"""
-thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #theta data, pulled from uniform distribution between -pi/2 and pi/2
+thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #theta data, drawn from uniform distribution between -pi/2 and pi/2
 xD = b*np.tan(thetaD) + a #position data from photodetectors
 ~~~
 
+Next...
+
+~~~ python
+#TODO
+~~~
+
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
+
+If you'd like to play with the code yourself, it can be found here(soon).
