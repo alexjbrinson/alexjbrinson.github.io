@@ -63,10 +63,8 @@ This simplified expression is immediately recognizable by mathematicians as a Ca
 
 Putting together what we've established thus far, we have a complete prescription for how to estimate the lighthouse's positional parameters:
 
-$$\frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_k)}{\partial \alpha  \partial \beta} = \frac{\partial^2 P_{prior}(\alpha,\beta)}{\partial \alpha  \partial \beta} \frac{P(x_k \vert \alpha, \beta)}{C} $$
-
-$$= \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta \pi} * \begin{cases}
-                                   \frac{1}{C} & \text{if $-5\leq\alpha\leq5$ and $0\leq\beta\leq5$} \\
+$$\frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_k)}{\partial \alpha  \partial \beta} = \frac{\partial^2 P_{prior}(\alpha,\beta)}{\partial \alpha  \partial \beta} \frac{P(x_k \vert \alpha, \beta)}{C} = \begin{cases} 
+                                   \frac{\beta}{\pi C ((x-\alpha)^2 + \beta^2)} & \text{$-5\leq\alpha\leq5$ & $0\leq\beta\leq5$} \\
                                    0 & \text{else} \end{cases}$$
 
 where C is the normalization constant st $$\int_{0}^{5} \int_{-5}^{5} \frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_k)}{\partial \alpha \partial \beta} d\alpha d\beta = 1$$
