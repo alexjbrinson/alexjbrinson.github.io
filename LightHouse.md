@@ -47,25 +47,27 @@ $$P(x_1 \leq x \leq x_2) =  \int_{x_1}^{x_2}\frac{\partial P}{\partial x}dx =  \
 
 Since the integrals are equivalent regardless of $$x_1$$ and $$x_2$$, we can simply equate the integrands:
 
-$$\rightarrow \frac{\partial P}{\partial x} \beta \sec^2(\theta(x)) = \frac{\partial P}{\partial \theta} = \frac{1}{\pi}$$
+$$\frac{\partial P}{\partial x} \beta \sec^2(\theta(x)) = \frac{\partial P}{\partial \theta} = \frac{1}{\pi}$$
 
 $$\Rightarrow \frac{\partial P}{\partial x} = \frac{\cos^2(\theta(x))}{\beta \pi} = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta \pi}$$
 
-and we arrive at the rather ~~convolved~~ convoluted likelihood function: $$P(x_k \vert \alpha, \beta) = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta \pi}$$
+and we arrive at the rather convoluted likelihood function: $$P(x \vert \alpha, \beta) = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta \pi}$$
 
 Fortunately, there is another useful tool our kit. One of the best friends of many physicists (or at least one of my best friends...) is Mathematica:
 
 ![EverythingIsCauchy.PNG](ComputationalPhysicsLab/LighthouseProblem/EverythingIsCauchy.PNG)
 
-This simplified expression is immediately recognizable by mathematicians as a Cauchy distribution, and by physicists as a Lorentzian. Whatever you want to call it, the distribution pops up all over the place, so this is a good sign that we're on the right track.
+This simplified expression is immediately recognizable by mathematicians as a Cauchy distribution, and by physicists as a Lorentzian. Whatever you want to call it, the distribution pops up all over the place and this is a good sign that we're on the right track.
 
 ### Posterior
 
 Putting together what we've established thus far, we have a complete prescription for how to estimate the lighthouse's positional parameters:
 
-$$ \frac{\partial^2 P_{posterior}(\alpha,\beta)\vert x_k}{\partial \alpha \partial \beta} = \frac{\partial^2 P_{prior}(\alpha,\beta)}{\partial \alpha \partial \beta} \frac{P(x_k \vert \alpha, \beta)}{C}$$,
+$$\frac{\partial^2 P_{posterior}(\alpha,\beta)\vert x_k)}{\partial \alpha  \partial \beta} = \frac{\partial^2 P_{prior}(\alpha,\beta)}{\partial \alpha  \partial \beta} \frac{P(x_k \vert \alpha, \beta)}{C} = \frac{\cos^2(\arctan(\frac{x-\alpha}{\beta}))}{\beta \pi} * \begin{cases}
+                                   \frac{1}{C} & \text{if $-5\leq\alpha\leq5$ and $0\leq\beta\leq5$} \\
+                                   0 & \text{else}$$
 
-where C is the normalization constant st int_{0}^{5} int_{-5}^{5} \frac{\partial^2 P_{posterior}(\alpha,\beta)\vert x_k}{\partial \alpha \partial \beta} d\alpha d\beta = 1$$
+where C is the normalization constant st $$int_{0}^{5} int_{-5}^{5} \frac{\partial^2 P_{posterior}(\alpha,\beta)\vert x_k}{\partial \alpha \partial \beta} d\alpha d\beta = 1$$
 
 ### Implementation
 
