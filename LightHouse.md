@@ -88,14 +88,12 @@ First, I defined a set of true lighthouse parameter values, as well as a total n
 a = float(1) #true lighthouse alpha parameter
 b = float(2) #true lighthouse beta parameter
 j = 8 #I'll generate 2^j data points
-~~~
 
-This was used to generate the full data set like so:
-
-~~~ python
 """Generating data to conditionalize on"""
-thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #theta data, pulled from uniform distribution between -pi/2 and pi/2
+thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #theta data, drawn from uniform distribution between -pi/2 and pi/2
 xD = b*np.tan(thetaD) + a #position data from photodetectors
 ~~~
 
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
+
+If you'd like to play with the code yourself, it can be found here(soon).
