@@ -102,4 +102,4 @@ Next...
 
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
 
-If you'd like to play with the code yourself, it can be found [here](ComputationalPhysicsLab/LighthouseProblem/Lighthouse.py) (written in Python 2, but should only be a few corrected print statements away from runnint in Python 3).
+If you'd like to play with the code yourself, it can be found here:[Lighthouse.py](ComputationalPhysicsLab/LighthouseProblem/Lighthouse.py) (Python 2).
