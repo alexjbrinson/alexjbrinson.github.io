@@ -61,13 +61,19 @@ This simplified expression is immediately recognizable by mathematicians as a Ca
 
 ### Posterior
 
-Putting together what we've established thus far, we have a complete prescription for how to estimate the lighthouse's positional parameters:
+Putting together what we've established thus far, we have a complete prescription for how to construct a posterior pdf over the lighthouse's positional parameters, based off a photedetector measurement $$x_1$$:
 
-$$\frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_k)}{\partial \alpha  \partial \beta} = \frac{\partial^2 P_{prior}(\alpha,\beta)}{\partial \alpha  \partial \beta} \frac{P(x_k \vert \alpha, \beta)}{C} = \begin{cases} 
-                                   \frac{\beta}{\pi C ((x-\alpha)^2 + \beta^2)} & \text{$-5\leq\alpha\leq5$ & $0\leq\beta\leq5$} \\
+$$\frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_1)}{\partial \alpha  \partial \beta} = \frac{\partial^2 P_{prior}(\alpha,\beta)}{\partial \alpha  \partial \beta} \frac{P(x_1 \vert \alpha, \beta)}{C} = \frac{\beta}{\pi((x_1-\alpha)^2 + \beta^2)} \begin{cases} 
+                                    \frac{1}{C} & \text{$-5\leq\alpha\leq5$ & $0\leq\beta\leq5$} \\
                                    0 & \text{else} \end{cases}$$
 
-where C is the normalization constant st $$\int_{0}^{5} \int_{-5}^{5} \frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_k)}{\partial \alpha \partial \beta} d\alpha d\beta = 1$$
+where C is the normalization constant st $$\int_{0}^{5} \int_{-5}^{5} \frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_1)}{\partial \alpha \partial \beta} d\alpha d\beta = 1$$
+
+If we wanted, we could treat our posterior distribution after the first data point as an updated prior on which to conditionalize the second data point, and so on. But this is equivalent to conditionalizing on the total data set all at once:
+
+$$\frac{\partial^2 P_{posterior}(\alpha,\beta\vert x_k)}{\partial \alpha \partial \beta} =  \displaystyle \prod_{j=1}^{k} \frac{\beta}{\pi((x_j-\alpha)^2 + \beta^2)}  \begin{cases} 
+                                   \frac{1}{C} & \text{$-5\leq\alpha\leq5$ & $0\leq\beta\leq5$} \\
+                                   0 & \text{else} \end{cases}$$
 
 ### Implementation
 
