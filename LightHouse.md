@@ -84,8 +84,8 @@ This was used to generate the full data set like so:
 
 ~~~ python
 """Generating data to conditionalize on"""
-thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #data set of theta vals between -pi/2 and pi/2, pulled from a uniform distribution
-xD = b*np.tan(thetaD) + a
+thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #theta data, pulled from uniform distribution between -pi/2 and pi/2
+xD = b*np.tan(thetaD) + a #position data from photodetectors
 ~~~
 
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
