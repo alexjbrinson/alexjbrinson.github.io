@@ -10,12 +10,6 @@ $$Y_l^m(\theta,\phi) = \text{TODO}$$
 
 But what most people _don't_ know, is that the Legendre Polynomials actually have an ~~evil~~ misunderstood twin: **The Legendre Q Functions**
 
-<figure>
-  <iframe src="https://www.wolframcloud.com/objects/5871cd13-26cc-4e96-b933-83e67f17f2e8?_embed=iframe" width="600" height="500" />
-<\figure>
-  
-Please work...
-  
-<figure>
- <iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500" />
-</figure>
+<iframe src="https://www.wolframcloud.com/objects/5871cd13-26cc-4e96-b933-83e67f17f2e8?_embed=iframe" width="600" height="500"></iframe>
+
+<iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>
