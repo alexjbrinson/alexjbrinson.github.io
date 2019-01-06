@@ -22,7 +22,7 @@ $$ \frac{d}{dx}[(1-x^2)\frac{dP}{dx}]+l(l+1)P(x) = 0 $$
 
 If we assume polynomial solutions -- that is, of the form $$P_l(x) = \sum_{j=0}^{\infty} a_j x^j$$ -- Then one finds a set of solutions to the Legendre equation known as the _Legendre Polynomials_, which are given by _Rodrigues' Formula_: 
 
-$$P_l(x) = \frac{1}{2^ll!}(\frac{d}{dx})^l(x^2-1)^l
+$$P_l(x) = \frac{1}{2^ll!}(\frac{d}{dx})^l(x^2-1)^l$$
 
 (Another fun fact: Using the [gamma function](https://en.wikipedia.org/wiki/Gamma_function) and [fractional derivatives](https://en.wikipedia.org/wiki/Fractional_calculus#Fractional_derivative_of_a_basic_power_function), Rodrigues' formula can be extended to define $$P_l$$ for all real values of l, not just the integers!)
 
