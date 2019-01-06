@@ -6,10 +6,7 @@ mathjax: true
 
 <iframe src="https://www.wolframcloud.com/objects/5871cd13-26cc-4e96-b933-83e67f17f2e8?_embed=iframe" width="600" height="500"></iframe>
 
-
-<iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>
-
-Everybody who's anybody knows about the Legendre Polynomials $$P_l$$ and their associated functions $$P_l^m$$ (and if you don't, I'll try to make you into somebody further on down the page). It is also well-known that the associated polynomials as a function of the polar angle, $$P_l^m(\cos(\theta))$$, when multiplied by a complex exponential in the azimuthal angle, $$e^{i\frac{m \phi}{2 \pi}}$$, produce particularly important type of function known as a "Spherical Harmonic", $$Y_l^m(\theta,\phi) = P_l^m(\cos(\theta)) e^{i\frac{m \phi}{2 \pi}}.$$
+Everybody who's anybody knows about the Legendre Polynomials $$P_l$$ and their associated functions $$P_l^m$$. It is also well-known that the associated polynomials as a function of the polar angle, $$P_l^m(\cos(\theta))$$, when multiplied by a complex exponential in the azimuthal angle, $$e^{i\frac{m \phi}{2 \pi}}$$, produce particularly important type of function known as a "Spherical Harmonic", $$Y_l^m(\theta,\phi) = P_l^m(\cos(\theta)) e^{i\frac{m \phi}{2 \pi}}.$$
 
 But what most people _don't_ know, is that the Legendre Polynomials actually have an ~~evil~~ misunderstood twin: **The Legendre Q Functions**
 
@@ -31,10 +28,12 @@ $$P_l(x) = \frac{1}{2^ll!}(\frac{d}{dx})^l(x^2-1)^l$$
 
 In much the same way as harmonic sinusoids in a Fourier series, The Legendre polynomials form a _complete, orthogonal basis_ of functions in the range [-1,1]. Mathematica makes it easy to look at these functions and get some intuition about their behavior. Below (will be) two interactive plots. One which allows you to look at different polynomials $$y(x) = P_l(x)$$ in cartesian coordinates, and one which allows you to plot the corresponding angular functions $$r(\theta) = P_l(\cos(\theta))$$ in polar coordinates:
 
-<iframe src="https://www.wolframcloud.com/objects/ea6fa1f3-9e35-44fa-a5cb-2192f76cdc0c?_embed=iframe" width="900" height="600"></iframe>
+<iframe markdown="0" src="https://www.wolframcloud.com/objects/ea6fa1f3-9e35-44fa-a5cb-2192f76cdc0c?_embed=iframe" width="900" height="600"></iframe>
 
 wooooork
 
 ## Spherical Harmonics
 
 ## Legendre Q functions
+
+<iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>
