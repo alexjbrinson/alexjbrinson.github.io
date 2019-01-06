@@ -24,9 +24,9 @@ If we assume polynomial solutions -- that is, of the form $$P_l(x) = \sum_{j=0}^
 
 $$P_l(x) = \frac{1}{2^ll!}(\frac{d}{dx})^l(x^2-1)^l
 
-(Another fun fact: Using fractional derivatives and the gamma function, Rodrigues' formula can be extended to define $$P_l$$ for all real values of l, not just the integers!)
+(Another fun fact: Using the [gamma function](https://en.wikipedia.org/wiki/Gamma_function) and [fractional derivatives](https://en.wikipedia.org/wiki/Fractional_calculus#Fractional_derivative_of_a_basic_power_function), Rodrigues' formula can be extended to define $$P_l$$ for all real values of l, not just the integers!)
 
-In much the same way as sinusoids in a Fourier series, The Legendre polynomials form a _complete, orthogonal basis_ of functions in the range [-1,1]. Mathematica makes it easy to look at these functions and get some intuition about their behavior. Below (will be) two interactive plots. One which allows you to plug in different polynomials $$y(x) = P_l(x)$$ in cartesian coordinates, and one which allows you to plot the corresponding angular functions $$r(\theta) = P_l(\cos(\theta))$$ in polar coordinates:
+In much the same way as harmonic sinusoids in a Fourier series, The Legendre polynomials form a _complete, orthogonal basis_ of functions in the range [-1,1]. Mathematica makes it easy to look at these functions and get some intuition about their behavior. Below (will be) two interactive plots. One which allows you to plug in different polynomials $$y(x) = P_l(x)$$ in cartesian coordinates, and one which allows you to plot the corresponding angular functions $$r(\theta) = P_l(\cos(\theta))$$ in polar coordinates:
 
 ![P_l(x) Plot goes here]()|![P_l(Cos(theta)) plot goes here]()
 
