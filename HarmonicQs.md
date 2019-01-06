@@ -20,12 +20,18 @@ In cases where we can set m = 0 (As it does in separation of variables problems 
 
 $$ \frac{d}{dx}[(1-x^2)\frac{dP}{dx}]+l(l+1)P(x) = 0 $$
 
-If we assume polynomial solutions -- that is, of the form $$P_l(x) = \Sum a_j x^j$$ -- Then one finds a set of solutions to the Legendre equation known as the _Legendre Polynomials_, which are given by _Rodrigues' Formula_: 
+If we assume polynomial solutions -- that is, of the form $$P_l(x) = \sum_{j=0}^{\infty} a_j x^j$$ -- Then one finds a set of solutions to the Legendre equation known as the _Legendre Polynomials_, which are given by _Rodrigues' Formula_: 
 
 $$P_l(x) = \frac{1}{2^ll!}(\frac{d}{dx})^l(x^2-1)^l
 
+(Another fun fact: Using fractional derivatives and the gamma function, Rodrigues' formula can be extended to define $$P_l$$ for all real values of l, not just the integers!)
+
+In much the same way as sinusoids in a Fourier series, The Legendre polynomials form a _complete, orthogonal basis_ of functions in the range [-1,1]. Mathematica makes it easy to look at these functions and get some intuition about their behavior. Below (will be) two interactive plots. One which allows you to plug in different polynomials $$y(x) = P_l(x)$$ in cartesian coordinates, and one which allows you to plot the corresponding angular functions $$r(\theta) = P_l(\cos(\theta))$$ in polar coordinates:
+
 ![P_l(x) Plot goes here]()|![P_l(Cos(theta)) plot goes here]()
 
-Test1|Test2
------------- | -------------
+# Spherical Harmonics
+
+# Q functions
+
 <iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>
