@@ -10,7 +10,7 @@ Everybody who's anybody knows about the Legendre Polynomials $$P_l$$ and their a
 
 But what most people _don't_ know, is that the Legendre Polynomials actually have an ~~evil~~ misunderstood twin: **The Legendre Q Functions**
 
-** Legendre Equation (TODO)
+## Legendre Equation
 
 The Legendre equation pops up in a number of different places in Physics, most notably in the contexts of electrostatic potentials and wavefunctions of the hydrogen atom. In both of those cases, the generalized legendre equation arises when using Separation of Variables in spherical coordinates to solve 2nd order PDEs -- the Laplace equation in electrostatics, and the Schrödinger equation in quantum mechanics (Fun fact: In the absence of a potential function V, the Schrödinger equation reduces to a diffusion equation with an imaginary coefficient, which yields wave-like solutions with a non-trivial dispersion relation). The _generalized Legendre equation_ is:
 
@@ -30,8 +30,8 @@ In much the same way as sinusoids in a Fourier series, The Legendre polynomials 
 
 ![P_l(x) Plot goes here]()|![P_l(Cos(theta)) plot goes here]()
 
-# Spherical Harmonics
+## Spherical Harmonics
 
-# Q functions
+## Legendre Q functions
 
 <iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>
