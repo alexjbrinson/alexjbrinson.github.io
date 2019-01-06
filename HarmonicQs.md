@@ -26,9 +26,9 @@ $$P_l(x) = \frac{1}{2^ll!}(\frac{d}{dx})^l(x^2-1)^l
 
 (Another fun fact: Using the [gamma function](https://en.wikipedia.org/wiki/Gamma_function) and [fractional derivatives](https://en.wikipedia.org/wiki/Fractional_calculus#Fractional_derivative_of_a_basic_power_function), Rodrigues' formula can be extended to define $$P_l$$ for all real values of l, not just the integers!)
 
-In much the same way as harmonic sinusoids in a Fourier series, The Legendre polynomials form a _complete, orthogonal basis_ of functions in the range [-1,1]. Mathematica makes it easy to look at these functions and get some intuition about their behavior. Below (will be) two interactive plots. One which allows you to plug in different polynomials $$y(x) = P_l(x)$$ in cartesian coordinates, and one which allows you to plot the corresponding angular functions $$r(\theta) = P_l(\cos(\theta))$$ in polar coordinates:
+In much the same way as harmonic sinusoids in a Fourier series, The Legendre polynomials form a _complete, orthogonal basis_ of functions in the range [-1,1]. Mathematica makes it easy to look at these functions and get some intuition about their behavior. Below (will be) two interactive plots. One which allows you to look at different polynomials $$y(x) = P_l(x)$$ in cartesian coordinates, and one which allows you to plot the corresponding angular functions $$r(\theta) = P_l(\cos(\theta))$$ in polar coordinates:
 
-![P_l(x) Plot goes here]()|![P_l(Cos(theta)) plot goes here]()
+<iframe src="https://www.wolframcloud.com/objects/ea6fa1f3-9e35-44fa-a5cb-2192f76cdc0c?_embed=iframe" width="900" height="600"></iframe>
 
 ## Spherical Harmonics
 
