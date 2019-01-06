@@ -28,9 +28,8 @@ $$P_l(x) = \frac{1}{2^ll!}(\frac{d}{dx})^l(x^2-1)^l$$
 
 In much the same way as harmonic sinusoids in a Fourier series, The Legendre polynomials form a _complete, orthogonal basis_ of functions in the range [-1,1]. Mathematica makes it easy to look at these functions and get some intuition about their behavior. Below (will be) two interactive plots. One which allows you to look at different polynomials $$y(x) = P_l(x)$$ in cartesian coordinates, and one which allows you to plot the corresponding angular functions $$r(\theta) = P_l(\cos(\theta))$$ in polar coordinates:
 
-<iframe markdown="0" src="https://www.wolframcloud.com/objects/ea6fa1f3-9e35-44fa-a5cb-2192f76cdc0c?_embed=iframe" width="900" height="600"></iframe>
+I'm running into a really weird rendering issue currently, so until I can get this to embed properly, a link to the cloud upload will have to suffice: [Legendre Polynomials Interactive](https://www.wolframcloud.com/objects/ea6fa1f3-9e35-44fa-a5cb-2192f76cdc0c?)
 
-wooooork
 
 ## Spherical Harmonics
 
