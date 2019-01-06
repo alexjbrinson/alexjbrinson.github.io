@@ -30,6 +30,8 @@ In much the same way as harmonic sinusoids in a Fourier series, The Legendre pol
 
 <iframe src="https://www.wolframcloud.com/objects/ea6fa1f3-9e35-44fa-a5cb-2192f76cdc0c?_embed=iframe" width="900" height="600"></iframe>
 
+wooooork
+
 ## Spherical Harmonics
 
 ## Legendre Q functions
