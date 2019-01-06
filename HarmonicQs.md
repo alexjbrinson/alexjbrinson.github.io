@@ -28,4 +28,4 @@ $$P_l(x) = \frac{1}{2^ll!}(\frac{d}{dx})^l(x^2-1)^l
 
 Test1|Test2
 ------------ | -------------
-<iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>|<iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>
+<iframe src="https://www.wolframcloud.com/objects/c350cd36-8b1e-4ca5-9869-75b9596659e7?_embed=iframe" width="600" height="500"></iframe>
