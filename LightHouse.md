@@ -24,7 +24,7 @@ $$  P(h \vert e) = \frac{P(e \vert h)P(h)}{P(e)} $$
 
 where $$P(h \vert e)$$ is the **posterior** probability assigned to some hypothesis h based on some set of evidence e, $$P(h)$$ is the **prior** probability assigned to h (prior to observing e), and $$P(e \vert h)$$ is the **likelihood** of observing evidence e *given* that h is true. $$P(e)$$ just amounts to a normalization factor on the posterior distribution; I don't know of any cool name for it.
 
-### A Prior(i)
+### A Prior
 
 As is typical of problems involving Bayesian conditionalization, the choice of prior is necessarily a bit arbitrary. I'll spare you the philosophy of probability spiel, but suffice to say that it's difficult (and sometimes impossible) to construct a truly information-free prior. Since the context of this problem is presumably a nearby ship hoping to identify the location of the lighthouse, I decided it was reasonable to use a uniform probability distribution over a small rectangle in $$\alpha$$-$$\beta$$ space, with $$-5\leq\alpha\leq5$$ (in arbitrary distance units) and $$0\leq\beta\leq5$$ (with the lower bound set st the lighthouse is assumed not to be inland):
 
