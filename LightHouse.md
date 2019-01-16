@@ -94,11 +94,29 @@ thetaD = np.random.uniform(-np.pi/2, np.pi/2, 2**j) #theta data, drawn from unif
 xD = b*np.tan(thetaD) + a #position data from photodetectors
 ~~~
 
-Next...
+Next, I discretized the $$\alpha-\beta$$ plane into a 2-D grid of $$(\alpha,\beta)$$ tuples to consider.
 
 ~~~ python
-#TODO
+parmsA = np.linspace(-5, 5, num = 1001)#alpha parameter vals
+parmsB = np.linspace(0, 5, num = 501)#beta parameter vals
+aa, bb = parms = np.meshgrid(parmsA, parmsB)
 ~~~
+
+This ...[TODO]
+
+For a single $$(\alpha,\beta)$$ pair, updating the probability based on a photodetector datapoint is accomplished exactly as we derived in the previous section:
+
+~~~ python
+def Prob(alp, beta, x, priorAB):
+	pro = priorAB
+	lh = beta/(np.pi * ((x-alp)**2 + beta**2))
+	pro = pro*lh
+	return pro
+~~~
+
+where lh is the Lorentzian likelihood function specific to that particular $$(\alpha,\beta)$$ pair.
+
+Now, If I had solely intended to [TODO]
 
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
 
