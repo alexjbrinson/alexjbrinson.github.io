@@ -102,8 +102,6 @@ parmsB = np.linspace(0, 5, num = 501)#beta parameter vals
 aa, bb = parms = np.meshgrid(parmsA, parmsB)
 ~~~
 
-Instead of estimating the optimal (largest posterior) $$(\alpha,\beta)$$ pair with this brute-force grid sampling, we could survey the parameter space more intelligently by using Markov chain Monte Carlo sampling methods (and indeed this was the focus of the next assignment), but that's a topic for another time.
-
 For a single $$(\alpha,\beta)$$ pair, updating the probability based on a photodetector datapoint is accomplished exactly as we derived in the previous section:
 
 ~~~ python
@@ -116,7 +114,7 @@ def Prob(alp, beta, x, priorAB):
 
 where lh is the Lorentzian likelihood function specific to that particular $$(\alpha,\beta)$$ pair.
 
-Next, we iteratively update each $$(\alpha,\beta)$$ tuple in the meshgrid after each additional photedector recording. This step is admittedly a bit gross...
+Now, we want to iteratively update each $$(\alpha,\beta)$$ tuple in the meshgrid after each additional photedector recording. This step is admittedly a bit gross...
 
 ~~~python
 def Conditioner(data, j, aparms, bparms, priorA, priorB, arg1=None,arg2=None, arg3=None,arg4=None):
@@ -146,9 +144,7 @@ def Conditioner(data, j, aparms, bparms, priorA, priorB, arg1=None,arg2=None, ar
 	return (distrbs, allStats, m) #returns a tuple with all that stuff...
 ~~~
 
-Note that if all I had cared about was identifying the most likely $$(\alpha,\beta)$$ pair after considering _all_ $$2^j$$ data points, it would be more efficient to simply compute the sum (at each grid coordinate) of the log likelihoods over the total data set, and identify the tuple with the largest sum. I elected to write the more pained function above instead, because I had wanted to animate the Bayesian updating of the posterior distribution after each additional data point (see animations at top and bottom of this page). 
-
-TODO?
+Note that if all I had cared about was identifying the most likely $$(\alpha,\beta)$$ pair after considering _all_ $$2^j$$ data points, it would be more efficient to simply compute the sum (at each grid coordinate) of the log likelihoods over the total data set, and identify the tuple with the largest sum. I instead elected to write the more pained function above, because I had wanted to animate the Bayesian updating of the posterior distribution after each additional data point (see animations at top and bottom of page). Additionally, instead of estimating the optimal (largest posterior) $$(\alpha,\beta)$$ pair with this brute-force grid sampling, we could survey the parameter space more intelligently by using Markov chain Monte Carlo sampling methods (and indeed this was the focus of the next Ph21 assignment), but that's a topic for another time.
 
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
 
