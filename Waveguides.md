@@ -23,9 +23,5 @@ Transverse Magnetic (TM) | Transverse Electric (TE)
 ___
 
 ## Waveguide Notebooks
- These are the Mathematica notebooks I wrote to generate the above animations:
+ This is the Mathematica notebook I wrote to generate rectangular waveguide animations: [AnimationsRectangular.nb](WaveGuideAnimations/AnimationsRectangular.nb). I am not including any code particular to the right-triangular geometry, as the determination of the modal solutions is the subject of a homework problem in Ph 106c (EM course at Caltech).
 
-* [AnimationsTriangular.nb](WaveGuideAnimations/AnimationsTriangular.nb)
-* [AnimationsRectangular.nb](WaveGuideAnimations/AnimationsRectangular.nb)
-
-I originally created the triangular waveguide notebook because I had just finished a Ph 106c problem where I needed to determine the possible modes of propagation for a right-triangular hollow waveguide, and I was curious to see what the solutions actually looked like. After that I decided I might as well repeat the procedure for a rectangular geometry, and my professor (Sunil Golwala) liked the results enough that he's going to post the animations next year when he covers the topic!
