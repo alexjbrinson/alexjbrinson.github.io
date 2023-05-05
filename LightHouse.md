@@ -148,4 +148,4 @@ Note that if all I had cared about was identifying the most likely $$(\alpha,\be
 
 ![ContourPlot.gif](ComputationalPhysicsLab/LighthouseProblem/ContourPlot.gif)
 
-If you'd like to play with the code yourself, it can be found here: [Lighthouse.py](ComputationalPhysicsLab/LighthouseProblem/Lighthouse.py) (Python 2, but should work if you just fix the print statements).
+If you'd like to play with the code yourself, it can be found here: [Lighthouse.py](ComputationalPhysicsLab/LighthouseProblem/Lighthouse.py)
