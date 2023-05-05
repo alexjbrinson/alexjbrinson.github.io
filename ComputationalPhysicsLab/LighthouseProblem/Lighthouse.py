@@ -41,7 +41,7 @@ def Conditioner(data, j, aparms, bparms, priorA, priorB, arg1=None,arg2=None, ar
 	distrbs = OB[...,np.newaxis] #this will store my distribution for each subset of data
 	m = np.amax(OB)
 	stats = np.array([0.0, 0.0, OB[0,0]])
-	print "l = 0, Stats = ", stats
+	print("l = 0, Stats = ", stats)
 	allStats = stats
 	for i in range(0, 2**j):
 		d = data[i] #treat previous probH as prior, and then parameterize ith data point.
@@ -50,7 +50,7 @@ def Conditioner(data, j, aparms, bparms, priorA, priorB, arg1=None,arg2=None, ar
 		probHs = probHs/np.sum(probHs) #normalizing
 		stats = WeightedStats(aparms, bparms, probHs)
 		if i+1 in np.exp2(np.arange(j)):
-			print "l = ", i+1, ", Stats: = ", stats
+			print("l = ", i+1, ", Stats: = ", stats)
 		distrbs = np.concatenate((distrbs, probHs[...,np.newaxis]), axis = -1)
 		allStats = np.vstack((allStats, stats))
 		if m < np.amax(probHs): 
@@ -79,8 +79,8 @@ parmsB = np.linspace(0, 5, num = 501)#beta parameter vals
 aa, bb = parms = np.meshgrid(parmsA, parmsB)
 
 (disUnif,  statsUnif,  mUnif) =  Conditioner(xD, j, aa, bb, Unif, Unif, None, None)
-print "disUnif", disUnif.shape, "\n", disUnif[:,:,1].shape
-print "FinalstatsUnif:\n", statsUnif[-1], "\n Max prob = ", mUnif
+print("disUnif", disUnif.shape, "\n", disUnif[:,:,1].shape)
+print("FinalstatsUnif:\n", statsUnif[-1], "\n Max prob = ", mUnif)
 
 
 """Plotting 3d wireframe posteriors from uniform priors"""
