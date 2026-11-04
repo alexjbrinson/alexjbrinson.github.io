@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+    <title>N Body Simulator</title>
+    <script src="../loadHeader.js" defer></script>
+  </head>
+<body>
+<br>
+<math>
+    <mover>
+        <mi>F</mi>
+        <mrow><mo>&#x21C0;</mo></mrow>
+    </mover> <sub>i</sub></math> <!--smh --><math>
+    <mo>=</mo>
+    <mrow>
+      <munderover>
+        <mo>&#8721;</mo>
+        <mrow><mi>j</mi><mo>&ne;</mo><mi>i</mi></mrow>
+        <mrow><mi>n</mi></mrow>
+      </munderover>
+      <mfrac>
+        <mn><input type="text" id="G" style="width: 30px;"></mn>
+        <msup><mi><mo><b>r</b><sub>i,j</sub><sup>2</sup></mo></mi></msup>
+      </mfrac>
+    </mrow>
+    <mo>- (</mo><mi><input type="text" id="beta" style="width: 30px;"></mi><mo>+</mo>
+    <mi><input type="text" id="Bz" style="width: 30px;"></mi><mo>&#x2A2F; )</mo>
+    <mover><mi>v</mi><mrow><mo>&#x21C0;</mo></mrow></mover><sub>i</sub></math> <!--smh --><math>
+    <mo>- &#x2207; {</mo>
+    <mi><input type="text" id="VDC" style="width: 30px;"></mi>
+        <mo>(</mo><mn>2</mn><mi>z</mi><sup><mn>2</mn></sup>
+        <mo>-</mo><mi>x</mi><sup><mn>2</mn></sup>
+        <mo>-</mo><mi>y</mi><sup><mn>2</mn></sup><mo>) + </mo>
+    <mi><input type="text" id="VRF" style="width: 30px;"></mi><mo>(</mo>
+        <mi>x</mi><sup><mn>2</mn></sup>
+        <mo>-</mo><mi>y</mi><sup><mn>2</mn></sup><mo>) * cos(</mo>
+        <mi><input type="text" id="wRF" style="width: 30px;"></mi><mo>*</mo><mi>t</mi><mo>)}</mo>
+   </math>
+      <br><br>
+<button type="button" id=toggleButton onclick=toggleAnimation()>stop</button>
+<button type="button" onclick=addBall()>Add Ball?</button>   
+<label for="dt">dt=</label><input type="text" id="dt" style="width: 30px;">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src=renderStuff.js></script>
+    <script src="nBodySimulator.js"></script>
+      
+    
+  </body>
+</html>
+
+<!-- <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+        "three/examples/jsm/controls/OrbitControls.js": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/controls/OrbitControls.js"
+      }
+    } -->
