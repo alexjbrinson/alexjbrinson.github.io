@@ -1,0 +1,12 @@
+/* a {background-color: black} */
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
