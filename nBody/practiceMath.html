@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MathJax example</title>
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+
+<table>
+    <!-- <tr>
+        <td>$\vec{F}_i=-\vec{\nabla}_{\vec{r}_i}\bigg(\sum_{j\neq i}^n$</td>
+        <td>$G\frac{m_i m_j}{|\vec{r}_{i,j}|}$</td>
+        <td>$e^{-\lambda_{\phi} r_{ij}}$</td>
+        <td>$+q_{i}V_{DC}\left(2z^2-x^2-y^2\right)$</td>
+        <td>$+q_{i}V_{RF}\left(x^2-y^2\right)$</td>
+        <td>$\cos(\omega_{RF} t)\bigg)$</td>
+        <td>$+\vec{v}_i\bigg(\times B\hat{z}$</td>
+        <td>$-\beta \bigg)$</td>
+    </tr> -->
+    <tr>
+        <td>$\vec{F}_i=-\vec{\nabla}_{\vec{r}_i}\bigg(\sum_{j\neq i}^n$</td>
+        <td><input type="text" id="G" style="width: 30px;">$\frac{m_i m_j}{|\vec{r}_{i,j}|}$</td>
+        <!-- <td>$e^{-\lambda_{\phi} r_{ij}}$</td> -->
+        <td>$+q_{i}$<input type="text" id="VDC" style="width: 30px;">$\left(2z^2-x^2-y^2\right)$</td>
+        <td>$+q_{i}$<input type="text" id="VRF" style="width: 30px;">$\left(x^2-y^2\right)$</td>
+        <td>$\cos($<input type="text" id="wRF" style="width: 30px;">$\,\, t)\bigg)$</td>
+        <td>$+\vec{v}_i\bigg(\times $<input type="text" id="Bz" style="width: 30px;">$\hat{z}$</td>
+        <td>$-$<input type="text" id="beta" style="width: 30px;">$ \bigg)$</td>
+        <td><button type="button" id=toggleButton onclick=toggleAnimation()>stop</button></td>
+        <td><button type="button" onclick=addBall()>Add Ball?</button></td>
+        <td><label for="dt">dt=</label><input type="text" id="dt" style="width: 30px;"></td>
+    </tr>
+    <tr>
+        <td></td><td>G:<input type="range" id="GSlider" style="width: 60px;"></td>
+        <!-- <td>$\lambda_{\phi}$:<input type="range" id="yukawaSlider" style="width: 60px;"></td> -->
+        <td>$V_{DC}$:<input type="range" id="VDCSlider" style="width: 60px;"></td>
+        <td>$V_{RF}$:<input type="range" id="VRFSlider" style="width: 60px;"></td>
+        <td>$\omega_{RF}$:<input type="range" id="wRFSlider" style="width: 60px;"></td>
+        <td>$B_{z}$:<input type="range" id="BzSlider" style="width: 60px;"></td>
+        <td>$\beta$:<input type="range" id="betaSlider" style="width: 60px;"></td>
+    </tr>
+</table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src=renderStuff.js></script>
+    <script src="nBodySimulator.js"></script>
+
+</body>
+</html>
