@@ -17,10 +17,10 @@ fetch(new URL("header.html", root))
 
       //updating links in header.html to be relative to "root"
       header.querySelectorAll("a").forEach(link => {
-          link.href = new URL(
-              link.getAttribute("href"),
-              root
-          );
+        link.href = new URL(link.getAttribute("href"), root);
+      });
+      header.querySelectorAll("img").forEach(img => {
+        img.src = new URL(img.getAttribute("src"), root);
       });
 
       //changing style and clickability of link leading to current
